@@ -1,10 +1,12 @@
 package Relacionamento_entre_classes;
 
 public class Lutador {
+    // Atributos
     private String nome, nacionalidade, categoria;
     private int idade, vitorias, derrotas, empates;
     private float altura, peso;
 
+    // Métodos
     public void apresentar(){
 
     }
@@ -25,6 +27,7 @@ public class Lutador {
 
     }
 
+    // Construtores
     public Lutador() {
     }
 
@@ -40,6 +43,7 @@ public class Lutador {
         this.peso = peso;
     }
 
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -112,6 +116,7 @@ public class Lutador {
         this.peso = peso;
     }
 
+    // ToString
     @Override
     public String toString() {
         return "Lutador{" +

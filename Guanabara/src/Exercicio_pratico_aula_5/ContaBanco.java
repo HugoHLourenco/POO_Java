@@ -10,9 +10,9 @@ public class ContaBanco {
     public ContaBanco() {
     }
 
-    public ContaBanco(float numConta, String tipo, String dono) {
+    public ContaBanco(float numConta, String dono) {
         this.numConta = numConta;
-        this.tipo = tipo;
+        this.tipo = "";
         this.dono = dono;
         this.status = false;
         this.saldo = 0;
@@ -69,9 +69,10 @@ public class ContaBanco {
                 "\n______________________________________________________________________________";
     }
 
-    public void abrirConta(){
+    public void abrirConta(String tipo){
         if(this.status == false){
             this.status = true;
+            this.tipo = tipo;
             System.out.println("A conta foi aberta");
         } else {
             System.out.println("A conta já está aberta!!");

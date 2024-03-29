@@ -10,12 +10,12 @@ public class ContaBanco {
     public ContaBanco() {
     }
 
-    public ContaBanco(float numConta, String tipo, String dono, boolean status, float saldo) {
+    public ContaBanco(float numConta, String tipo, String dono) {
         this.numConta = numConta;
         this.tipo = tipo;
         this.dono = dono;
-        this.status = status;
-        this.saldo = saldo;
+        this.status = false;
+        this.saldo = 0;
     }
 
     public float getNumConta() {

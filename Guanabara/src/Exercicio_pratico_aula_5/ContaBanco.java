@@ -100,7 +100,6 @@ public class ContaBanco {
         if(this.status == true){
             if(saque < this.saldo){
                 this.saldo -= saque;
-                pagarMensal();
             } else {
                 System.out.println("SALDO INDISPONÍVEL!!!");
             }
@@ -110,7 +109,7 @@ public class ContaBanco {
         }
     }
 
-    public void pagarMensal(){
-        this.saldo -= 5;
+    public void pagarMensal(float valor){
+        this.saldo -= valor;
     }
 }

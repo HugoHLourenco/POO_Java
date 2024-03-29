@@ -6,6 +6,7 @@ public class TestaContaBanco {
 
         conta1.abrirConta();
         conta1.sacar(999999999);
+        conta1.pagarMensal(5);
         conta1.fecharConta();
 
         System.out.println(conta1.toString());

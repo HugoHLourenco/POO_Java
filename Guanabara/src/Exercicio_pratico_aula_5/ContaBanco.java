@@ -71,9 +71,21 @@ public class ContaBanco {
 
     public void abrirConta(String tipo){
         if(this.status == false){
-            this.status = true;
             this.tipo = tipo;
-            System.out.println("A conta foi aberta");
+
+            if(this.tipo == "cc"){
+                this.saldo += 50;
+                this.status = true;
+                System.out.println("A Conta Corrente foi aberta");
+            } else if(this.tipo == "cp"){
+                this.saldo += 150;
+                this.status = true;
+                System.out.println("A Conta Poupança foi aberta");
+            } else {
+                System.out.println("TIPO DE CONTA INVÁLIDO!!!");
+            }
+
+
         } else {
             System.out.println("A conta já está aberta!!");
         }
@@ -82,9 +94,9 @@ public class ContaBanco {
     public void fecharConta(){
         if(this.status == true){
             this.status = false;
-            System.out.println("A conta foi fechada");
+            System.out.println("\nA conta foi fechada");
         } else {
-            System.out.println("A conta já está fechada!!");
+            System.out.println("\nA conta já está fechada!!");
         }
     }
 
@@ -92,7 +104,8 @@ public class ContaBanco {
         if(this.status == true){
             this.saldo += deposito;
         } else {
-            System.out.println("A CONTA ESTÁ FECHADA!!! \n" +
+            System.out.println("\nIMPOSSÍVEL DEPOSITAR!!!" +
+                    "A CONTA ESTÁ FECHADA!!! \n" +
                     "ABRA ELA PRIMEIRO!!!");
         }
     }
@@ -105,7 +118,8 @@ public class ContaBanco {
                 System.out.println("SALDO INDISPONÍVEL!!!");
             }
         } else {
-            System.out.println("A CONTA ESTÁ FECHADA!!! \n" +
+            System.out.println("\nIMPOSSÍVEL SACAR!!!" +
+                    "A CONTA ESTÁ FECHADA!!! \n" +
                     "ABRA ELA PRIMEIRO!!!");
         }
     }

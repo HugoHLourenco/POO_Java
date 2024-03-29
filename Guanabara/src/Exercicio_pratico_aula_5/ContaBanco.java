@@ -124,7 +124,11 @@ public class ContaBanco {
         }
     }
 
-    public void pagarMensal(float valor){
-        this.saldo -= valor;
+    public void pagarMensal(){
+        if(this.tipo == "cc"){
+            this.saldo -= 12;
+        } else if(this.tipo == "cp"){
+            this.saldo -= 20;
+        }
     }
 }

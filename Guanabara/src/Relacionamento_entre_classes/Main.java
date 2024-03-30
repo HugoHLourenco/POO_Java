@@ -14,7 +14,7 @@ public class Main {
          l[5] = new Lutador("Muchacho", "México", 42, 222, 0, -2, 2.01f, 121);
 
         Luta luta1 = new Luta();
-        luta1.marcarLuta(l[0], l[1]);
+        luta1.marcarLuta(l[0], l[2]);
         luta1.lutar();
     }
 }

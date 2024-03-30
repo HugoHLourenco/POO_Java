@@ -18,6 +18,7 @@ public class Luta {
                 this.aprovado = false;
                 this.desafiado = null;
                 this.desafiante = null;
+                System.out.println("A luta não pode acontecer!");
             }
         }
 

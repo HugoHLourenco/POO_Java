@@ -15,7 +15,7 @@ public class Livro implements Publicacao {
                 "\nCom " + totPaginas + " páginas" +
                 "\nEstá na página: " + pgAtual +
                 "\nEle está aberto? " + aberto +
-                "\nO(a) leitor(a) é: " + leitor.getNome() +
+                "\nO(a) leitor(a) é: " + leitor.getNome() + ", " + leitor.getIdade() +" anos," + " sexo: " + leitor.getSexo() +
                 "\n----------------------------------------------------";
     }
 
@@ -91,7 +91,11 @@ public class Livro implements Publicacao {
 
     @Override
     public void folhear(int pg) {
-        this.pgAtual = pg;
+        if (pg >= 0 && pg < this.totPaginas) {
+            this.pgAtual = pg;
+        } else {
+            System.out.println("Não existe essa página neste livro!!!");
+        }
     }
 
     @Override

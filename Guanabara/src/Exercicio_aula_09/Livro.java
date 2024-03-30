@@ -10,14 +10,13 @@ public class Livro implements Publicacao {
 
     // Métodos
     public String detalhes() {
-        return "Livro{" +
-                "titulo='" + titulo + '\'' +
-                ", autor='" + autor + '\'' +
-                ", totPaginas=" + totPaginas +
-                ", pgAtual=" + pgAtual +
-                ", aberto=" + aberto +
-                ", leitor=" + leitor +
-                '}';
+        return "\nO livro de titulo: " + titulo +
+                "\nAutor(a): " + autor  +
+                "\nCom " + totPaginas + " páginas" +
+                "\nEstá na página: " + pgAtual +
+                "\nEle está aberto? " + aberto +
+                "\nO(a) leitor(a) é: " + leitor.getNome() +
+                "\n----------------------------------------------------";
     }
 
     // Construtores
@@ -91,8 +90,8 @@ public class Livro implements Publicacao {
     }
 
     @Override
-    public void folhear(int p) {
-        this.pgAtual = p;
+    public void folhear(int pg) {
+        this.pgAtual = pg;
     }
 
     @Override

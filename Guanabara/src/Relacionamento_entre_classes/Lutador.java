@@ -10,22 +10,23 @@ public class Lutador {
 
     // Métodos
     public void apresentar(){
-        System.out.println("\nLutador: " + this.nome +
+        System.out.println("Lutador: " + this.nome +
                 "\nNacionalidade: " + this.nacionalidade +
                 "\nAltura: " + this.altura +
                 "\nPeso: " + this.peso +
                 "\nCategoria: " + this.categoria +
                 "\nIdade: " + this.idade +
-                "\nVitórias: " + this.idade +
+                "\nVitórias: " + this.vitorias +
                 "\nDerrotas: " + this.derrotas +
-                "\nEmpates: " + this.empates);
+                "\nEmpates: " + this.empates +
+                "\n------------------------------------------------------------");
     }
 
     public void status(){
         System.out.println("\nLutador: " + this.nome +
                 "\nNacionalidade: " + this.nacionalidade +
                 "\nCategoria: " + this.categoria +
-                "\nVitórias: " + this.idade +
+                "\nVitórias: " + this.vitorias +
                 "\nDerrotas: " + this.derrotas +
                 "\nEmpates: " + this.empates);
     }

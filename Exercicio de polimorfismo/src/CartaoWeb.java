@@ -1,2 +1,2 @@
-public class CartaoWeb {
+public abstract class CartaoWeb {
 }

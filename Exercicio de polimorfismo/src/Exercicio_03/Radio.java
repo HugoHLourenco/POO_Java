@@ -11,6 +11,14 @@ public class Radio extends Produto{
                 "\nE a banda: " + this.banda);
     }
 
+    public void trocarEstacao(String varEst){
+        this.estacao = varEst;
+    }
+
+    public void trocarBanda(String varBanda) {
+        this.banda = varBanda;
+    }
+
     // Getters e Setters
     public String getEstacao() {
         return estacao;

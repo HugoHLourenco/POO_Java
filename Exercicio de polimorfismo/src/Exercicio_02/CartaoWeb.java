@@ -1,3 +1,5 @@
+package Exercicio_02;
+
 public abstract class CartaoWeb {
 
     // Atributos

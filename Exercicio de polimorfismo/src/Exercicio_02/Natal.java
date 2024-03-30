@@ -1,4 +1,6 @@
-public class Natal extends CartaoWeb{
+package Exercicio_02;
+
+public class Natal extends CartaoWeb {
 
     // Métodos
     @Override

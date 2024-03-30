@@ -1,4 +1,8 @@
-public final class DiaDosNamorados extends CartaoWeb{
+package Exercicio_02;
+
+import Exercicio_02.CartaoWeb;
+
+public final class DiaDosNamorados extends CartaoWeb {
 
     // Métodos
     @Override

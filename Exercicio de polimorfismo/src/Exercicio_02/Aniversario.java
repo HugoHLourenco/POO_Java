@@ -1,4 +1,6 @@
-public class Aniversario extends CartaoWeb{
+package Exercicio_02;
+
+public class Aniversario extends CartaoWeb {
 
     // Métodos
     @Override

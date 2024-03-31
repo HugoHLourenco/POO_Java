@@ -8,29 +8,26 @@ public class Produto {
     protected boolean testado;
 
     // Métodos
-    public boolean testaUnidade() {
+    public void testaUnidade() {
         if (!testado) {
             testado = true;
             if (Math.random() < 0.9) {
                 this.valor = "Aprovado";
-                return true;
             } else {
                 this.valor = "Reprovado";
-                return false;
             }
         } else {
             System.out.println("Produto já testado");
-            return this.valor.equals("Aprovado");
         }
     }
 
     public void setaVolume(int vol) {
-        this.volume += vol;
+        this.volume = vol;
     }
 
     @Override
     public String toString() {
-        return "\n O produto de Número serial: " + nSerial +
+        return "\nO produto de Número serial: " + nSerial +
                 "\nVolume: " + volume +
                 "\nResultado do teste: " + valor;
     }

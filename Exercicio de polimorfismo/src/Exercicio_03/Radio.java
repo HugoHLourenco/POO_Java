@@ -7,8 +7,9 @@ public class Radio extends Produto{
 
     // Métodos
     public void escutar(){
-        System.out.println("Ouindo a estação: " + this.estacao +
-                "\nE a banda: " + this.banda);
+        System.out.println("\nOuindo a estação " + this.estacao +
+                "\nE a banda " + this.banda +
+                "\n________________________________________________________________");
     }
 
     public void trocarEstacao(String varEst){
@@ -33,6 +34,14 @@ public class Radio extends Produto{
     }
 
     public void setBanda(String banda) {
+        this.banda = banda;
+    }
+
+    // Construtores
+
+    public Radio(int nSerial, int volume, String estacao, String banda) {
+        super(nSerial, volume);
+        this.estacao = estacao;
         this.banda = banda;
     }
 }

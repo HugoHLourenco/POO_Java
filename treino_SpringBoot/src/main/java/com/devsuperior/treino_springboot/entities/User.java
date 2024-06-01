@@ -1,9 +1,19 @@
 package com.devsuperior.treino_springboot.entities;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "tb_user")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String email;
+
+    @ManyToOne
+    @JoinColumn(name = "departamento_id")
     private Departamento departamento;
 
     public User() {

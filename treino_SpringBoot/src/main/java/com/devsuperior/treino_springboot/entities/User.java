@@ -9,11 +9,11 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    private String name;
     private String email;
 
     @ManyToOne
-    @JoinColumn(name = "departamento_id")
+    @JoinColumn(name = "departament_id")
     private Departamento departamento;
 
     public User() {
@@ -28,11 +28,11 @@ public class User {
     }
 
     public String getNome() {
-        return nome;
+        return name;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.name = nome;
     }
 
     public String getEmail() {

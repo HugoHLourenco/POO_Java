@@ -1,4 +1,4 @@
-package com.devsuperior.userdept2.entities;
+package com.devsuperior.userdept2.model.entities;
 
 
 import jakarta.persistence.*;

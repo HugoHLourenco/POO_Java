@@ -1,7 +1,7 @@
 package com.devsuperior.userdept2.controllers;
 
-import com.devsuperior.userdept2.entities.User;
-import com.devsuperior.userdept2.repositories.UserRepository;
+import com.devsuperior.userdept2.model.entities.User;
+import com.devsuperior.userdept2.model.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

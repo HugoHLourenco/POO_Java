@@ -13,6 +13,7 @@ public class User {
     private String email;
 
     @ManyToOne
+    @JoinColumn(name = "departament_id")
     private Departament department;
 
     public User() {
